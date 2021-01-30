@@ -1,4 +1,4 @@
-# diplomadoJavascript
+# Diplomado desarrollo web con Javascript
 
 En este repositorio es donde iré poniendo todo el código que se vaya creando en el transcurso del 
 diplomado para que lo puedan clonar y tener ejemplos prácticos. 
