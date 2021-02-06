@@ -10,3 +10,7 @@ miOtraVariable = 34.55
 
 console.log(miOtraVariable);
 console.log(miVariable);
+
+// Ejemplos de como declarar constantes en JS
+const MI_CONSTANTE = 6; 
+console.log(MI_CONSTANTE);
