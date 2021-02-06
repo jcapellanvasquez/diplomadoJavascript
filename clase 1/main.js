@@ -35,7 +35,8 @@ let esMayorEdad = false; // true
 
 
 
-// Operadores de comparacion
+// Operadores de comparacion y uso de
+// if statement
 
 // == 
 // ===
@@ -58,3 +59,5 @@ if (var1 === var2) {
 } else {
     console.log("no son iguales")
 }
+
+
