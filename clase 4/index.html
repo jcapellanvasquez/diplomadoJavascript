@@ -18,32 +18,41 @@
                 </h2>
             </div>
         </div>
-        <form class="row">
-            <div class="col-xs-12 col-md-4 my-3 my-sm-0">    
-                <input type="text" 
-                class="form-control" 
-                placeholder="Titulo" 
-                name="titulo" id="titulo">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="mi-formulario" class="row">
+                            <div class="col-xs-12 col-md-12 my-3"> 
+                                <input type="text"
+                                class="form-control" 
+                                placeholder="Titulo" 
+                                name="titulo" id="titulo">
+                            </div>
+                            <div class="col-xs-12 col-md-12 mb-3">   
+                                <textarea name="descripcion" 
+                                id="descripcion" 
+                                cols="30" 
+                                rows="10"
+                                class="form-control"
+                                placeholder="Descripcion"
+                                ></textarea>
+                            </div>
+                            <div class="col-xs-12 col-md-12 text-end">   
+                                <button 
+                                class="btn btn-primary w-100 w-sm-50" 
+                                type="submit">Agregar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-12 col-md-4 mb-3">   
-                <input type="text" 
-                class="form-control" 
-                placeholder="Descripcion" 
-                name="descripcion" 
-                id="descripcion">
-            </div>
-            <div class="col-xs-12 col-md-4 text-end">   
-                <button 
-                class="btn btn-primary w-100 w-sm-50" 
-                type="submit">Agregar</button>
-            </div>
-            
-        </form>
+        </div>
+
         <div class="row">
             <div class="col py-3">
-                <ul class="list-group">
-                    <li class="list-group-item">An item</li>
-                  </ul>
+                <ul id="listado" class="list-group">
+                </ul>
             </div>
         </div>
     </div>
