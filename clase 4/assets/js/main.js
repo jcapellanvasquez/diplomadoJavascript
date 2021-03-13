@@ -18,8 +18,14 @@ const renderizarLista = function() {
         const p2 = document.createElement("p")
         p2.innerText = tareas[index].descripcion
 
+        const button = document.createElement("button");
+        button.classList.add("btn","btn-light")
+        button.innerText = "Seleccionar"
+        button.addEventListener('click', seleccionarTarea)
+
         item.append(p1)
         item.append(p2)
+        item.append(button)
     
         // Agregar elementos a un elemento contenedor
         lista.append(item)
@@ -41,6 +47,10 @@ const accionFormulario = function(event) {
     // renderizar la lista
     renderizarLista()
 
+}
+
+const seleccionarTarea = function(event) {
+    console.log(event)
 }
 
 form.addEventListener("submit", accionFormulario)
