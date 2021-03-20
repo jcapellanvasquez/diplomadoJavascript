@@ -9,6 +9,7 @@ const renderizarLista = function() {
         const item = document.createElement("li")
         item.classList.add('list-group-item');
         
+         
         
         // Acceder al valor de la lista 
         // mediante su indice
@@ -21,6 +22,7 @@ const renderizarLista = function() {
         const button = document.createElement("button");
         button.classList.add("btn","btn-light")
         button.innerText = "Seleccionar"
+        button.dataset.id = index
         button.addEventListener('click', seleccionarTarea)
 
         item.append(p1)
@@ -50,7 +52,9 @@ const accionFormulario = function(event) {
 }
 
 const seleccionarTarea = function(event) {
-    console.log(event)
+    console.log(event.target.dataset.id)
+
+    console.log(tareas[event.target.dataset.id])
 }
 
 form.addEventListener("submit", accionFormulario)
